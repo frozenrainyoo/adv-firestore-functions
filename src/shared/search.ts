@@ -136,7 +136,8 @@ function createIndex(html: any, n: number) {
     const finalArray: any = [];
     const wordArray = text
       .toLowerCase()
-      .replace(/[^a-zA-Z0-9]+/g, ' ')
+      // for searching other languages.
+      // .replace(/[^a-zA-Z0-9]+/g, ' ')
       .replace(/ +/g, ' ')
       .split(' ');
     do {
